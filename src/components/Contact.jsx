@@ -273,7 +273,7 @@ const Contact = () => {
           variants={itemVariants}
         >
           <motion.a
-            href="https://github.com/sulok-pokhrel" 
+            href="https://github.com/sulok-i" 
             target="_blank"
             rel="noopener noreferrer"
             whileHover="hover"
@@ -285,7 +285,7 @@ const Contact = () => {
           </motion.a>
 
           <motion.a
-            href="https://www.linkedin.com/in/sulok-pokhrel-66417a222"
+            href="https://www.linkedin.com/in/sulok-pokhrel/"
             target="_blank"
             rel="noopener noreferrer"
             whileHover="hover"
@@ -304,10 +304,10 @@ const Contact = () => {
         >
           or reach me directly at{" "}
           <a
-            href="mailto:sulok@example.com" 
+            href="mailto:sulok.pokharel123@gmail.com" 
             className="text-purple-400 hover:text-purple-300 transition-colors"
           >
-            sulok@example.com
+            sulok.pokharel123@gmail.com
           </a>
         </motion.p>
       </motion.div>

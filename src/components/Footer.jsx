@@ -14,12 +14,12 @@ const Footer = () => {
               Sulok Pokhrel
             </h3>
             <p className="text-starWhite/70 mb-4">
-              .NET Backend Developer specializing in C#, ASP.NET, SQL Server, and
+              .NET Backend Developer specializing in C#, ASP.NET, Web API, SQL Server, and
               clean architecture
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://github.com/sulok-i"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-starWhite/70 hover:text-nebulaPink transition-colors"
@@ -27,7 +27,7 @@ const Footer = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/sulok-pokhrel/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-starWhite/70 hover:text-cosmicBlue transition-colors"
@@ -35,7 +35,7 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://x.com/Sulok14"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-starWhite/70 hover:text-violet-500 transition-colors"
@@ -43,7 +43,7 @@ const Footer = () => {
                 <XIcon className="w-5 h-5" />
               </a>
               <a
-                href="mailto:sulok.pokhrel@example.com"
+                href="mailto:sulok.pokharel123@gmail.com"
                 className="text-starWhite/70 hover:text-emerald-500 transition-colors"
               >
                 <Mail className="w-5 h-5" />
@@ -96,10 +96,10 @@ const Footer = () => {
             <p className="text-starWhite/70 mb-2">
               Email:{' '}
               <a 
-                href="mailto:sulok.pokhrel@example.com"
+                href="mailto:sulok.pokharel123@gmail.com"
                 className="hover:text-nebulaPink transition-colors"
               >
-                sulokpokhrel@.com
+                sulok.pokharel123@gmail.com
               </a>
             </p>
             <p className="text-starWhite/70">

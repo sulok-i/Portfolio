@@ -53,7 +53,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-br from-pink-500/15 via-purple-600/15 to-indigo-600/15 opacity-0 group-hover:opacity-100 transition-opacity duration-800"></div>
               
               <img
-                src="/public/profile.png"  
+                src="/profile.png"  
                 alt="Sulok Pokhrel - .NET Backend Developer"
                 className="w-full h-auto object-cover rounded-3xl transform group-hover:scale-110 transition-transform duration-800 ease-out"
               />
@@ -74,7 +74,7 @@ export default function About() {
 
             <p className="text-lg sm:text-xl text-gray-300/90 leading-relaxed">
               I'm a passionate .NET Backend Developer dedicated to crafting scalable, high-performance server-side solutions and robust APIs. 
-              With strong skills in C#, .NET Core / ASP.NET, SQL Server, Entity Framework, and clean architecture principles, 
+              With strong skills in C#, .NET Core / ASP.NET, SQL Server, Entity Framework, and Clean Architecture principles, 
               I love transforming complex business needs into clean, efficient, and maintainable code.
             </p>
 
@@ -93,7 +93,7 @@ export default function About() {
                   Experience
                 </h3>
                 <p className="text-gray-400 text-base">
-                  3+ months as .NET Backend Developer at Passion Chasers Pvt. Ltd.
+                  1+ Years
                 </p>
               </motion.div>
 
@@ -111,7 +111,7 @@ export default function About() {
                   Projects
                 </h3>
                 <p className="text-gray-400 text-base">
-                  Building .NET backend systems, RESTful APIs, clean architecture implementations
+                  4+ Projects Completed
                 </p>
               </motion.div>
             </div>

@@ -1,8 +1,6 @@
-
 import React from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
-
 
 const skills = [
   {
@@ -16,14 +14,14 @@ const skills = [
     color: 'text-[#512BD4]',
   },
   {
-    name: 'ASP.NET',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg',
-    color: 'text-[#512BD4]',
+    name: 'PostgreSQL',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+    color: 'text-[#336791]',
   },
   {
-    name: 'SQL Server',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg',
-    color: 'text-[#CC2927]',
+    name: 'MySQL',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg',
+    color: 'text-[#4479A1]',
   },
   {
     name: 'React',
@@ -33,7 +31,7 @@ const skills = [
   {
     name: 'JavaScript',
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
-    color: 'text-[#F7DF1E]', 
+    color: 'text-[#F7DF1E]',
   },
   {
     name: 'Git',
@@ -41,12 +39,11 @@ const skills = [
     color: 'text-[#F05032]', 
   },
   {
-    name: 'Docker',
-    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
-    color: 'text-[#2496ED]', 
+    name: 'Azure',
+    icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg',
+    color: 'text-[#0078D4]',
   },
 ];
-
 
 const containerVariants = {
   hidden: { opacity: 0 },

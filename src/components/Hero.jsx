@@ -109,19 +109,19 @@ export default function Hero() {
         </motion.p>
 
         <motion.div className="mt-10 flex justify-center gap-6 sm:gap-8" variants={item}>
-          <motion.a href="#" whileHover="hover" initial="rest" variants={iconMotion} className="group p-4 bg-gray-900/50 rounded-full border border-purple-500/30 hover:border-purple-400/70 hover:shadow-[0_0_35px_rgba(168,85,247,0.5)] transition-all">
+          <motion.a href="https://github.com/sulok-i" whileHover="hover" initial="rest" variants={iconMotion} className="group p-4 bg-gray-900/50 rounded-full border border-purple-500/30 hover:border-purple-400/70 hover:shadow-[0_0_35px_rgba(168,85,247,0.5)] transition-all">
             <Github className="w-8 h-8 text-gray-300 group-hover:text-purple-400 transition-colors" />
           </motion.a>
 
-          <motion.a href="#" whileHover="hover" initial="rest" variants={iconMotion} className="group p-4 bg-gray-900/50 rounded-full border border-blue-500/30 hover:border-blue-400/70 hover:shadow-[0_0_35px_rgba(59,130,246,0.5)] transition-all">
+          <motion.a href="https://www.linkedin.com/in/sulok-pokhrel/" whileHover="hover" initial="rest" variants={iconMotion} className="group p-4 bg-gray-900/50 rounded-full border border-blue-500/30 hover:border-blue-400/70 hover:shadow-[0_0_35px_rgba(59,130,246,0.5)] transition-all">
             <Linkedin className="w-8 h-8 text-gray-300 group-hover:text-blue-400 transition-colors" />
           </motion.a>
 
-          <motion.a href="#" whileHover="hover" initial="rest" variants={iconMotion} className="group p-4 bg-gray-900/50 rounded-full border border-white/30 hover:border-white/60 hover:shadow-[0_0_35px_rgba(255,255,255,0.4)] transition-all">
+          <motion.a href="https://x.com/Sulok14" whileHover="hover" initial="rest" variants={iconMotion} className="group p-4 bg-gray-900/50 rounded-full border border-white/30 hover:border-white/60 hover:shadow-[0_0_35px_rgba(255,255,255,0.4)] transition-all">
             <Twitter className="w-8 h-8 text-gray-300 group-hover:text-white transition-colors" />
           </motion.a>
 
-          <motion.a href="#" whileHover="hover" initial="rest" variants={iconMotion} className="group p-4 bg-gray-900/50 rounded-full border border-emerald-500/30 hover:border-emerald-400/70 hover:shadow-[0_0_35px_rgba(16,185,129,0.5)] transition-all">
+          <motion.a href="mailto:sulok.pokharel123@gmail.com" whileHover="hover" initial="rest" variants={iconMotion} className="group p-4 bg-gray-900/50 rounded-full border border-emerald-500/30 hover:border-emerald-400/70 hover:shadow-[0_0_35px_rgba(16,185,129,0.5)] transition-all">
             <Mail className="w-8 h-8 text-gray-300 group-hover:text-emerald-400 transition-colors" />
           </motion.a>
         </motion.div>
