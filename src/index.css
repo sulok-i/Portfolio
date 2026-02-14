@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root {
+  --nebula-pink: #ff61d2;
+  --cosmic-blue: #7c3aed;
+  --violet-500: #8b5cf6;
+  --deep-space: #0f0f1a;
+  --star-white: #f8f9fa;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: #000;
+  color: white;
+  overflow-x: hidden;
+}
+
+canvas {
+  image-rendering: pixelated;
+}
