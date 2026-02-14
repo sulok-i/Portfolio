@@ -32,7 +32,7 @@ const NavBar = () => {
             className="text-3xl font-black tracking-tight group"
           >
           <span className="bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">
-  SULOK
+  SP
 </span>
             <div className="h-0.5 w-0 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 group-hover:w-full transition-all duration-500 mt-1"></div>
           </a>

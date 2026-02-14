@@ -53,7 +53,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-br from-pink-500/15 via-purple-600/15 to-indigo-600/15 opacity-0 group-hover:opacity-100 transition-opacity duration-800"></div>
               
               <img
-                src="/profile.png"  
+                src="/profile2.PNG"  
                 alt="Sulok Pokhrel - .NET Backend Developer"
                 className="w-full h-auto object-cover rounded-3xl transform group-hover:scale-110 transition-transform duration-800 ease-out"
               />
