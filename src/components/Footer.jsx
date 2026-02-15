@@ -1,120 +1,129 @@
-import React from "react";
-import { Github, Linkedin, Mail, XIcon } from 'lucide-react';
+// src/components/Footer.jsx
+import React from 'react';
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion';
+import { Github, Linkedin, Mail, Twitter } from 'lucide-react'; // or use react-icons/fa if you prefer
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  // Animation variants
+  const container = {
+    hidden: { opacity: 0, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8, ease: 'easeOut', staggerChildren: 0.15 },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
+  const iconHover = {
+    rest: { scale: 1 },
+    hover: { scale: 1.2, rotate: 8, transition: { type: 'spring', stiffness: 400 } },
+  };
+
   return (
-    <footer className="py-16 px-4 border-t border-starWhite/10 relative z-10">
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-          {/* Brand Column */}
-          <div>
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-nebulaPink to-cosmicBlue text-transparent bg-clip-text mb-4">
+    <footer className="py-12 px-6 border-t border-gray-800/50 bg-gradient-to-t from-black to-transparent relative z-10">
+      <motion.div
+        className="max-w-5xl mx-auto"
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+          {/* Brand & Socials */}
+          <motion.div variants={item} className="space-y-4">
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-600 bg-clip-text text-transparent">
               Sulok Pokhrel
             </h3>
-            <p className="text-starWhite/70 mb-4">
-              .NET Backend Developer specializing in C#, ASP.NET, Web API, SQL Server, and
-              clean architecture
-            </p>
-            <div className="flex gap-4">
-              <a
-                href="https://github.com/sulok-i"
+            <div className="flex justify-center md:justify-start gap-6">
+              <motion.a
+                href="https://github.com/sulok-i" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-starWhite/70 hover:text-nebulaPink transition-colors"
+                variants={iconHover}
+                initial="rest"
+                whileHover="hover"
+                className="text-gray-400 hover:text-purple-400 transition-colors"
               >
-                <Github className="w-5 h-5" />
-              </a>
-              <a
+                <Github className="w-6 h-6" />
+              </motion.a>
+
+              <motion.a
                 href="https://www.linkedin.com/in/sulok-pokhrel/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-starWhite/70 hover:text-cosmicBlue transition-colors"
+                variants={iconHover}
+                initial="rest"
+                whileHover="hover"
+                className="text-gray-400 hover:text-blue-400 transition-colors"
               >
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="https://x.com/Sulok14"
+                <Linkedin className="w-6 h-6" />
+              </motion.a>
+
+              <motion.a
+                href="https://x.com/Sulok14" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-starWhite/70 hover:text-violet-500 transition-colors"
+                variants={iconHover}
+                initial="rest"
+                whileHover="hover"
+                className="text-gray-400 hover:text-violet-400 transition-colors"
               >
-                <XIcon className="w-5 h-5" />
-              </a>
+                <Twitter className="w-6 h-6" />
+              </motion.a>
+
+              <motion.a
+                href="mailto:sulok.pokharel123@gmail.com" 
+                variants={iconHover}
+                initial="rest"
+                whileHover="hover"
+                className="text-gray-400 hover:text-emerald-400 transition-colors"
+              >
+                <Mail className="w-6 h-6" />
+              </motion.a>
+            </div>
+          </motion.div>
+
+          {/* Quick Links  */}
+          <motion.div variants={item} className="space-y-3">
+            <h4 className="text-lg font-semibold text-white mb-3">Quick Links</h4>
+            <ul className="flex flex-col gap-2 text-gray-400">
+              <li><a href="#about" className="hover:text-purple-400 transition">About</a></li>
+              <li><a href="#projects" className="hover:text-purple-400 transition">Projects</a></li>
+              <li><a href="#contact" className="hover:text-purple-400 transition">Contact</a></li>
+            </ul>
+          </motion.div>
+
+          {/* Contact Info */}
+          <motion.div variants={item} className="space-y-3">
+            <h4 className="text-lg font-semibold text-white mb-3">Get in Touch</h4>
+            <p className="text-gray-400">
               <a
                 href="mailto:sulok.pokharel123@gmail.com"
-                className="text-starWhite/70 hover:text-emerald-500 transition-colors"
-              >
-                <Mail className="w-5 h-5" />
-              </a>
-            </div>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold text-starWhite mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="#about"
-                  className="text-starWhite/70 hover:text-nebulaPink transition-colors"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#projects"
-                  className="text-starWhite/70 hover:text-nebulaPink transition-colors"
-                >
-                  Projects
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#skills"
-                  className="text-starWhite/70 hover:text-nebulaPink transition-colors"
-                >
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="text-starWhite/70 hover:text-nebulaPink transition-colors"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Get in Touch */}
-          <div>
-            <h3 className="text-lg font-semibold text-starWhite mb-4">Get in Touch</h3>
-            <p className="text-starWhite/70 mb-2">
-              Email:{' '}
-              <a 
-                href="mailto:sulok.pokharel123@gmail.com"
-                className="hover:text-nebulaPink transition-colors"
+                className="hover:text-emerald-400 transition"
               >
                 sulok.pokharel123@gmail.com
               </a>
             </p>
-            <p className="text-starWhite/70">
-              Based in Biratnagar, Nepal
-            </p>
-          </div>
+            <p className="text-gray-500 text-sm">Biratnagar, Nepal</p>
+          </motion.div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-starWhite/10 pt-8 text-center">
-          <p className="text-starWhite/50">
-            &copy; {currentYear} Sulok Pokhrel. All rights reserved.
-          </p>
-        </div>
-      </div>
+        {/* Copyright */}
+        <motion.div
+          variants={item}
+          className="mt-10 pt-8 border-t border-gray-800/50 text-center text-gray-500 text-sm"
+        >
+          © {currentYear} Sulok Pokhrel. All rights reserved.
+        </motion.div>
+      </motion.div>
     </footer>
   );
 };

@@ -68,7 +68,7 @@ export default function About() {
             transition={{ duration: 1.1, ease: 'easeOut' }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-cyan-400 to-purple-600 bg-clip-text text-transparent">
               About Me
             </h2>
 
